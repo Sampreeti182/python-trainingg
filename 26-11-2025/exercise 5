@@ -1,0 +1,30 @@
+class Bankaccount:
+    def __init__(self, name, balance=0):
+        self.name = name
+        self.balance= balance
+        self.log=[]
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            return f"deposited {amount} to {self.name}"
+            return "deposited successfully. Current amount:",self.balance
+        else:
+            return "Balance can't be less than zero."
+    def withdraw(self, amount):
+        if amount <= 0:
+            return "Balance can't be less than zero."
+        elif amount > self.balance:
+            return " insufficient balance. Current balance:",self.balance
+        else:
+            self.balance -= amount
+            self.log.append ("withdrew:",amount)
+            return "withdrew successfully. Current balance:",self.balance
+    def check_balance(self):
+        return self.balance
+    def transaction_logs(self):
+        return self.log
+acc= Bankaccount(name="Sampreeti", balance=10000)
+print(acc.deposit(100))
+print(acc.withdraw(700))
+print(acc.check_balance())
+print(acc.transaction_logs())
