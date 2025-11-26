@@ -1,0 +1,13 @@
+class customer:
+    def __init__(self, name, age, city):
+        self.name = name
+        self.age = age
+        self.city = city
+    def loyalty(self):
+        if self.age >25:
+            return self.name,"is eligible for loyalty program"
+        else:
+            return self.name,"is  not eligible for loyalty program"
+
+c1= customer("Sampreeti", 22,"kolkata")
+print(c1.loyalty())
