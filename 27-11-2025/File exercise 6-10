@@ -1,0 +1,33 @@
+#exercise 6
+source= "source.txt"
+destination= "backup.txt"
+with open(source,"r") as f, open(destination,"w") as g:
+    for line in f:
+        g.write(line)
+print("files copied succesfully")
+
+#exercise 7
+with open("sample.txt","r") as f:
+    for line in f:
+        if "Python" in line:
+            print(line.strip())
+#exercise 8
+with open("students.csv","r") as f:
+    reader=csv.reader(f)
+    for row in reader:
+        name=row[0]
+        marks=row[1]
+        print(name)
+        print(marks)
+
+#exercise 9
+with open("numbers.txt","w") as f:
+    for i in range(1,11)
+        f.write(f"{i}-{i*i}\n")
+
+#exercise 10
+from datetime import datetime
+with open("log.txt","a") as f:
+    timestamp=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    f.write(f"{timestamp} - Application started\n")
+
