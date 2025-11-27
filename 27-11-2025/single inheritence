@@ -1,0 +1,28 @@
+#example 1
+class Vechile:
+    def move(self):
+        print("Vechile is moving")
+class Car(Vechile):
+    def drive(self):
+        print("Car is driving")
+c= Car()
+c.move()
+c.drive()
+
+#example 2
+class product:
+    def __init__(self,name,price):
+        self.name = name
+        self.price = price
+    def show_product(self):
+        print("Product name:", self.name)
+        print("Price:", self.price)
+class electronic(product) :
+    def __init__(self,name,price, warrenty):
+        super().__init__(name,price)
+        self.warrenty = warrenty
+    def show_electronic_details(self):
+        self.show_product()
+        print(self.warrenty)
+e1=electronic("iphone",150000,2)
+e1.show_electronic_details()
