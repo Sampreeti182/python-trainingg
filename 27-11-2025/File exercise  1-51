@@ -1,0 +1,35 @@
+#exercise 1
+import csv
+
+with open("notes.txt","w") as f:
+    f.write("this is line 1\n")
+    f.write("this is line 2\n")
+    f.write("this is line 3\n")
+    f.write("this is line 4\n")
+    f.write("this is line 5\n")
+with open("notes.txt","r") as f:
+    content = f.read()
+    print(content)
+#exercise 2
+with open("notes.txt","r") as f:
+    for line in f:
+        print(line.strip())
+#exercisw 3
+with open("notes.txt","a") as f:
+    f.write("this is an appended line\n")
+print("Line appended successfully")
+#exercise 4
+filename="notes.txt"
+c=0
+with open(filename,"r") as f:
+    for line in f:
+        c+=1
+print("number of lines in the file",c)
+#exercise 5
+filename="notes.txt"
+word_count=0
+with open(filename,"r") as f:
+    for line in f:
+        word=line.split()
+        word_count=len(word)
+print(word_count)
