@@ -1,0 +1,29 @@
+#example 1
+class Animal:
+    def sound(self):
+        print("Animal make sounds")
+class dog(Animal):
+    def dog_sound(self):
+        print("Dog barks")
+class cat(Animal):
+    def cat_sound(self):
+        print("Cat meows")
+d=dog()
+c=cat()
+d.sound()
+d.dog_sound()
+c.sound()
+c.cat_sound()
+
+#example 2
+class shape:
+    def show(self):
+        print("Shape")
+class Square(shape):
+    def draw_square(self):
+        print("Drawing a Square")
+class Rectangle(shape):
+    def draw_rectangle(self):
+        print("Drawing a Rectangle")
+s= Square()
+r=Rectangle()
