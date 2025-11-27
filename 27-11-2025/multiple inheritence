@@ -1,0 +1,39 @@
+class father:
+    def __init__(self,father_name):
+        self.father_name= father_name
+
+    def show_father(self):
+        print("Father's name:",self.father_name)
+class mother:
+    def __init__(self,mother_name):
+        self.mother_name= mother_name
+
+    def show_mother(self):
+        print("Mother's name:",self.mother_name)
+class child(mother,father):
+    def __init__(self,father_name,mother_name,child_name):
+        father.__init__(self,father_name)
+        mother.__init__(self,mother_name)
+        self.child_name= child_name
+    def show_child(self):
+        print("Child name:",self.child_name)
+
+c=child("Anjan","Satabdi","Sampreeti")
+c.show_father()
+c.show_mother()
+c.show_child()
+
+#example 2
+class phone:
+    def call(self):
+        print("phone can make calls")
+class camera:
+    def take_picture(self):
+        print("camera can take pictures")
+class smart_phones(camera,phone):
+    def features(self):
+        print("Samrt phone can take both calls and pictures")
+s=smart_phones()
+s.take_picture()
+s.call()
+s.features()    
