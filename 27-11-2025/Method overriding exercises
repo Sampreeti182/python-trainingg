@@ -1,0 +1,44 @@
+#exercise 1
+class notification:
+    def send(self,message):
+        print("Sending notification",message)
+class EmailNotification(notification):
+    def send(self,message):
+        print("Sending email",message)
+class SMSNotification(notification):
+    def send(self,message):
+        print("Sending sms",message)
+class PushNotification(notification):
+    def send(self,message):
+        print("Sending push",message)
+n1=EmailNotification()
+n1.send("your order is confirmed")
+n2=SMSNotification()
+n2.send("yor otp is 345678")
+n3 = PushNotification()
+n3.send("you have a new message")
+
+#exercise 2
+class amazonPayment:
+    def send(self):
+
+        print("Select payment method on amazon")
+class GooglePay(amazonPayment):
+    def makePayment(self):
+        print("processing payment through google pay")
+        print("payment successfull through google pay")
+class Phonepay(amazonPayment):
+    def makePayment(self):
+        print("processing payment through phone pay")
+        print("payment successfull through phone pay")
+class PayTM(amazonPayment):
+    def makePayment(self):
+        print("processing payment through PayTM")
+        print("payment successfull through PayTM")
+g=GooglePay()
+p1=Phonepay()
+p2=PayTM()
+g.makePayment()
+p1.makePayment()
+
+p2.makePayment()
