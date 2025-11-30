@@ -1,0 +1,18 @@
+#example 1
+data=[("a",1),("b",2),("c",3),("d",4),("e",5)]
+d={}
+for key,value in data:
+    d[key]=value
+print(d)
+
+#example 2
+t=(10,5,20,8,15)
+largest=float('-inf')
+second=float('-inf')
+for n in t:
+    if n>largest:
+        second=largest
+        largest=n
+    elif n>second and n!=largest:
+        second=n
+print(second)
