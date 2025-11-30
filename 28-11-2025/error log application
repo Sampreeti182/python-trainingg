@@ -1,0 +1,7 @@
+import datetime
+def log_error(message):
+    time= datetime.datetime.now().strftime("%Y:%m:%d:%H:%M:%S")
+    with open("errorlog","a") as f:
+        f.write(f"{time}: {message}\n")
+    for i in range(5):
+        log_error(f"Error in {i+1}")    
