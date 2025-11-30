@@ -1,0 +1,18 @@
+with open("students.txt","r") as file:
+    students= file.readlines()
+for name in students:
+    name=name.strip()
+    if name=="":
+        continue
+    certificate_text= f"""
+    ***************************************
+      CERTIFICATE OF COMPLETION  
+      *****************************
+      This is to certify that **{name}** has been successfully completed the course
+      
+      Congratulations!********************************
+    """
+    filename= f"certificate_{name.replace(' ','_')}.txt"
+    with open(filename,"w") as cert_file:
+        cert_file.write(certificate_text)
+    print("Certificate generated successfully")
