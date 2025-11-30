@@ -1,0 +1,10 @@
+def format_catalog():
+    with open("products.txt","r") as f:
+        lines=f.readlines()
+    with open("catalog.txt","w") as c:
+        c.write("Product       Price\n")
+        c.write("------------------\n")
+        for line in lines:
+            name,price=line.split()
+            c.write(f"{name:<18}{price}\n")
+format_catalog()
