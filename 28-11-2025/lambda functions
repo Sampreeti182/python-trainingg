@@ -1,0 +1,23 @@
+#ex 1
+square = lambda x: x * x
+print(square(5))
+add= lambda a,b: a+b
+print(add(3,4))
+#ex 2
+generate_line= lambda user: f"hello{user}, welcome to python training."
+def write_dynamic_line(user,filename):
+    with open(filename,'w') as f:
+        f.write(generate_line(user))
+write_dynamic_line("Sampreeti","welcome.txt")
+
+#ex 3
+def write_employee_record(emp_id,name,salary):
+    record= f"""
+    Employee Record
+    ID: {emp_id}
+    Name: {name}
+    Salary: {salary}
+    """
+    with open("employee_record.txt","a") as f:
+        f.write(record)
+write_employee_record(101,"Sampreeti",45000)
