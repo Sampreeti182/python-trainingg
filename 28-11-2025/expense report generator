@@ -1,0 +1,12 @@
+def write_expense_report(expenses):
+    with open("report.txt","w") as f:
+        f.write("item          amount\n")
+        f.write("-----------------\n")
+        total=0
+        for name,amount in expenses:
+            f.write(f"{name:<20} {amount:>10f}\n")
+            total+=amount
+        f.write("-----------------\n")
+        f.write(f"{'Total':<20} {total:>10f}\n")
+expenses=[("Pen",10),("Snacks",25),("Travel",100)]
+write_expense_report(expenses)
