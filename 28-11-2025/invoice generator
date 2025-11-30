@@ -1,0 +1,19 @@
+import csv
+def generate_invoice():
+    total=0
+    with open("orders.csv","r") as f:
+        reader = csv.reader(f)
+        next(reader)
+        with open("invoice.txt","w") as inv:
+            inv.write("item        quantity  price\n")
+            inv.write("---------------\n")
+            for item,quantity,price in reader:
+                quantity = int(quantity)
+                price = int(price)
+                line_total = quantity * price
+                total+=line_total
+
+                inv.write(f"{item:<20}{quantity:<10}{price:2f}\n")
+            inv.write("-----------------------\n")
+            inv.write(f"{'Final Total':<20}{total:2f}\n")
+generate_invoice()
