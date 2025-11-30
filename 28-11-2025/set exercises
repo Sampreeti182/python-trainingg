@@ -1,0 +1,13 @@
+#ex 1
+a={1,2,3,4}
+b=[3,4,5,6]
+result=(a-b)|(b-a)
+print(result)
+
+#example 2
+nums=[1,2,3,4,5,6,5,8,9]
+result=set()
+for x in nums:
+    if nums.count(x)==2:
+        result.add(x)
+print(list(result))
