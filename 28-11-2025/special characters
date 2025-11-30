@@ -1,0 +1,6 @@
+s=input("enter a string")
+clean=""
+for ch in s:
+    if ch.isalnum():
+        clean+=ch
+print("string without special characters:",clean)
