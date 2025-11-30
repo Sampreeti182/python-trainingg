@@ -1,0 +1,9 @@
+import datetime
+def mark_attendance(name,status):
+    time= datetime.datetime.now().strftime("%Y:%M:%D:%H:%M:%S")
+    with open("Attendance.log","a") as f:
+        f.write(f"{time}-{name}-{status}\n")
+
+name= input("Enter student name: ")
+status= input("Enter student status: ")
+mark_attendance(name,status)
