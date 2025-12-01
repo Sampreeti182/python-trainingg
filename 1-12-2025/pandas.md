@@ -16,3 +16,29 @@ Handles missing data easily.
 Supports data filtering, grouping, merging, and aggregation.
 Can read/write data from multiple sources: CSV, Excel, SQL, JSON, etc.
 Integrates well with data visualization and machine learning libraries.
+
+Key Features of Pandas
+
+Data Structures
+Series: One-dimensional labeled array.
+DataFrame: Two-dimensional labeled data structure (rows & columns).
+Panel (deprecated): For 3D data.
+
+Data Handling
+Handles missing data gracefully.
+Supports data alignment and label-based indexing.
+Efficient for large datasets.
+
+Input/Output
+Read/write data from CSV, Excel, SQL, JSON, Parquet, HDF5, etc.
+Easy integration with databases and APIs.
+
+Data Operations
+Filtering & Selection: Select rows/columns using labels or conditions.
+Aggregation & Grouping: Summarize data using groupby().
+Merging & Joining: Combine multiple datasets like SQL joins.
+Reshaping: Pivot tables, stack/unstack operations.
+
+Performance
+Built on NumPy, so it’s fast and memory-efficient.
+Supports vectorized operations (no need for loops).
