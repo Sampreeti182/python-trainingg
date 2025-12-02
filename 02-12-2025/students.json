@@ -1,0 +1,17 @@
+[
+    {
+        "name":"sampreeti",
+        "marks":99,
+        "City":"kolkata"
+    },
+    {
+        "name":"tania",
+        "marks":90,
+        "City":"mumbai"
+    },
+    {
+        "name":"john",
+        "marks":45,
+        "City":"bangalore"
+    }
+]
