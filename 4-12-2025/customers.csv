@@ -1,0 +1,11 @@
+customer_id,first_name,last_name,email,phone,address,city,state,zip
+1,John,Doe,john.doe@example.com,555-1234,123 Elm St,Springfield,IL,62701
+2,Jane,Smith,jane.smith@example.com,555-5678,456 Oak St,Lincoln,NE,68502
+3,Emily,Jones,emily.jones@example.com,555-8765,789 Pine St,Columbus,OH,43210
+4,Michael,Brown,michael.brown@example.com,555-4321,101 Maple St,Denver,CO,80202
+5,Sarah,Johnson,sarah.johnson@example.com,555-9876,202 Birch St,Austin,TX,73301
+6,David,White,david.white@example.com,555-6543,303 Cedar St,Chicago,IL,60605
+7,Laura,Miller,laura.miller@example.com,555-2468,404 Redwood St,Miami,FL,33101
+8,James,Garcia,james.garcia@example.com,555-1357,505 Willow St,Seattle,WA,98101
+9,Daniel,Martinez,daniel.martinez@example.com,555-8642,606 Elm St,Portland,OR,97201
+10,Rebecca,Lee,rebecca.lee@example.com,555-7531,707 Pine St,San Francisco,CA,94105

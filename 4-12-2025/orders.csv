@@ -1,0 +1,11 @@
+order_id,customer_id,product_id,product_name,quantity,price
+1,1,101,Product A,2,50
+2,2,102,Product B,1,30
+3,3,103,Product C,5,20
+4,4,104,Product D,3,15
+5,5,105,Product E,7,100
+6,6,106,Product F,3,25
+7,7,107,Product G,8,10
+8,8,108,Product H,4,60
+9,9,109,Product I,2,75
+10,10,110,Product J,6,90
