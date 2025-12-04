@@ -34,9 +34,9 @@ class BankAccount:
 
 account = BankAccount("Sampreeti", 1000)
 
-account.deposit(500)       # Deposit $500
-account.withdraw(200)      # Withdraw $200
-account.deposit(300)       # Deposit $300
+account.deposit(500)       
+account.withdraw(200)      
+account.deposit(300)      
 
 print(f"Current balance: ${account.check_balance()}")
 
