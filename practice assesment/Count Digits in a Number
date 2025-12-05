@@ -1,0 +1,10 @@
+number = int(input("Enter a number: "))
+ 
+ 
+digit_count = 0
+while number != 0:
+    number //= 10  # Remove the last digit
+    digit_count += 1
+ 
+ 
+print(f"Total digits: {digit_count}")
