@@ -1,0 +1,41 @@
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from .models import Product
+import json
+
+@csrf_exempt
+def product_list(request):
+
+
+    if request.method == "GET":
+        data = list(Product.objects.values())
+        return JsonResponse(data, safe=False)
+
+
+    if request.method == "POST":
+        body = json.loads(request.body.decode('utf-8'))
+        Product.objects.create(
+            name=body["name"],
+            role=body["price"],
+            salary=body["quantity"]
+        )
+        return JsonResponse({"message": "POST EXECUTED"})
+
+    
+    if request.method == "PUT":
+        body = json.loads(request.body.decode('utf-8'))
+        product = Product.objects.get(id=body["id"])
+        product.name = body["name"]
+        product.role = body["price"]
+        product.salary = body["quantity"]
+        product.save()
+        return JsonResponse({"message": "PUT EXECUTED"})
+
+    
+    if request.method == "DELETE":
+        body = json.loads(request.body.decode('utf-8'))
+        product= Employee.objects.get(id=body["id"])
+        emp.delete()
+        return JsonResponse({"message": "DELETE EXECUTED"})
+
+    return JsonResponse({"error": "Method not allowed"}, status=405)
