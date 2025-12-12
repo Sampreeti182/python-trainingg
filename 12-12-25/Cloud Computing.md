@@ -1,4 +1,5 @@
 WHAT IS CLOUD COMPUTING
+
 Cloud computing is a technology that delivers computing services—such as servers, storage, databases, networking, software, analytics, and intelligence—over the internet (“the cloud”) instead of relying on local hardware or on-premises infrastructure.
 
 Key Features of Cloud Computing
